@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Developer Portfolio</title>
+    <title>Sushameendra Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -56,6 +57,7 @@
             font-weight: bold;
             background: var(--gradient);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -81,7 +83,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--dark-bg) 0%, #16213e  100%);
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #16213e 100%);
             position: relative;
             overflow: hidden;
         }
@@ -96,8 +98,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
-            50% { transform: translate(-50%, -50%) rotate(180deg); }
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
         }
 
         .hero-content {
@@ -109,7 +118,7 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.5rem, 4.5vw, 3.5rem);
             margin-bottom: 1rem;
             opacity: 0;
             animation: slideUp 1s ease forwards 0.5s;
@@ -136,6 +145,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -175,6 +185,7 @@
             margin-bottom: 3rem;
             background: var(--gradient);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -284,7 +295,14 @@
 
         .project-card h3 {
             color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card .duration {
+            color: var(--primary-color);
+            font-size: 0.9rem;
             margin-bottom: 1rem;
+            opacity: 0.8;
         }
 
         /* Skills Grid */
@@ -408,15 +426,15 @@
             .nav-links {
                 display: none;
             }
-            
+
             section {
                 padding: 3rem 1rem;
             }
-            
+
             .hero-content {
                 padding: 0 1rem;
             }
-            
+
             .projects-grid,
             .skills-grid,
             .awards-grid {
@@ -437,10 +455,11 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="nav">
         <div class="nav-content">
-            <div class="logo">AI Developer</div>
+            <div class="logo">Sushameendra Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -457,7 +476,9 @@
         <div class="hero-content">
             <h1>B R SUSHAMEENDRA RAO</h1>
             <p class="subtitle">Digital Specialist Engineer</p>
-            <p class="description">Software developer with 2.8+ years of experience in Python and Java. Skilled in developing Gen AI and Agentic AI applications using AI frameworks, Azure AI, prompt engineering, and databases while following Responsible AI principles.</p>
+            <p class="description">Software developer with 3 years of experience in Python and Java. Skilled in
+                developing Gen AI and Agentic AI applications using AI frameworks, Azure/GCP/AWS AI services, prompt engineering,
+                and databases while following Responsible AI principles. Experienced in Git, cloud services, and optimizing AI workflows for efficiency and accuracy.</p>
             <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
     </section>
@@ -482,7 +503,7 @@
                 <p class="placeholder">www.linkedin.com/in/b-r-sushameendra-rao-3a2137214</p>
             </div>
         </div>
-        
+
         <div class="card fade-in">
             <h3>Education</h3>
             <p><strong>Bachelor of Technology (B.Tech.) in Electronics and Communication Engineering</strong></p>
@@ -493,10 +514,10 @@
         <div class="card fade-in">
             <h3>Certifications</h3>
             <ul style="list-style: none; padding-left: 0;">
+                <li style="margin-bottom: 0.5rem;">• Microsoft Azure AI - 900</li>
                 <li style="margin-bottom: 0.5rem;">• Infosys Certified Generative AI Professional – Intermediate</li>
                 <li style="margin-bottom: 0.5rem;">• Infosys Certified Python Programmer</li>
                 <li style="margin-bottom: 0.5rem;">• Infosys certified Professional - Generative AI for All</li>
-                <li style="margin-bottom: 0.5rem;">• Courses on Gen-AI, Prompt engineering, AI modules, AI guardrails</li>
             </ul>
         </div>
     </section>
@@ -508,14 +529,14 @@
             <p class="company">Infosys Limited</p>
             <p class="duration">November 2022 – Present</p>
             <ul>
-                <li>AI-Powered Document Intelligence – Developed multi-modal document processing systems, classifying text, tables, and images for structured retrieval.</li>
-                <li>Proposal Automation & Summarization – Built AI-driven solutions for response drafting, risk analysis, and document classification to streamline proposal management.</li>
-                <li>Advanced Retrieval Techniques – Implemented hierarchical indexing, context enrichment, and Graph-based RAG to enhance search accuracy.</li>
-                <li>Agentic Systems – Built Agentic RAG workflows and a SQL Agentic chatbot to enable intelligent, context-aware interactions and query handling.</li>
-                <li>Cloud-Based AI Deployment – Deployed document intelligence and retrieval services in a scalable cloud environment.</li>
-                <li>AI Research & Innovation – Explored Agentic RAG, workflow automation, and hypothetical document embedding for intelligent response generation.</li>
-                <li>Evaluation Frameworks – Designed and implemented evaluation pipelines using DeepEval and RAGAS, supporting both ground-truth-based and ground-truth-less assessments using model outputs.</li>
-                <li>Cross-Functional Collaboration – Worked with multiple teams to integrate AI-driven insights into enterprise applications.</li>
+                <li>Developing an adaptive document classification orchestrator that intelligently routes between Traditional ML, RAG, and Advanced Layout Models based on metadata signals, reducing misclassification by 42% and improving processing speed by 35%.</li>
+                <li>Building a multi-stage classification system handling 52 document types and 176 sub-types using keyword extraction (YAKE, RAKE, TF-IDF), topic modeling (LDA, NMF), and machine learning classification with Random Forest.</li>
+                <li>Developed an AI-powered document intelligence platform that processes unstructured data through multi-modal pipelines, reducing manual document review time by 65% and improving retrieval speed by 3x.</li>
+                <li>Built a proposal automation tool using RAG and LangChain that generates summaries, drafts responses, and performs risk analysis reducing proposal preparation time by 60%.</li>
+                <li>Implemented agentic chatbots using LangGraph and CrewAI with dynamic multi-agent collaboration, reducing human intervention by 40% and improving response accuracy by 35%.</li>
+                <li>Created an Evaluation-as-a-Service platform using DeepEval and RAGAS that reduced LLM evaluation time by 75% and increased model quality scores by 28%.</li>
+                <li>Developed defense mechanisms against prompt injection attacks and implemented data fingerprinting for vector databases, optimizing storage costs by 35% and reducing security vulnerabilities by 80%.</li>
+                <li>Enhanced retrieval accuracy through hierarchical indexing, hypothetical document embedding, and Graph-based RAG models, improving search relevance by 45%.</li>
             </ul>
         </div>
     </section>
@@ -524,38 +545,51 @@
         <h2 class="section-title fade-in">Projects</h2>
         <div class="projects-grid">
             <div class="project-card fade-in">
-                <h3>Training & Foundation</h3>
-                <p>Trained in Java, Python, Oracle SQL, MongoDB, MySQL, HTML, and CSS. Completed a capstone project developing a web-based application using Flask, Python, and MySQL.</p>
-            </div>
-            
-            <div class="project-card fade-in">
                 <h3>Document Intelligence Platform</h3>
-                <p>Developed an AI-powered document query system to extract insights from unstructured data. Designed a multi-modal processing pipeline, classifying text, tables, and images. Enhanced retrieval accuracy using advanced search and indexing techniques.</p>
+                <p class="duration">9 months | Python, LangChain, Weaviate, FastAPI, Azure AI Services</p>
+                <p>Engineered an AI-powered query system that extracts insights from unstructured documents through multi-modal processing of text, tables, and images. Implemented advanced search and indexing techniques with 92% accuracy, deployed on cloud infrastructure and integrated with multiple client applications.</p>
             </div>
-            
+
             <div class="project-card fade-in">
-                <h3>Document Analyzer</h3>
-                <p>Developed an AI-driven document analysis tool to generate summaries, FAQs, and FAQ-based responses. Implemented a document quality index that evaluates content relevance based on FAQ responses.</p>
+                <h3>Agentic Classification Orchestrator</h3>
+                <p class="duration">Ongoing | Python, LangGraph, Azure AI Services, Azure SQL Server</p>
+                <p>Building an adaptive orchestrator that dynamically selects optimal classification approaches using metadata profiling (text density, image ratio, OCR confidence, page count). Integrating confidence-based fallbacks and continuous learning capabilities, targeting 42% reduction in misclassification and 35% improvement in processing speed.</p>
             </div>
-            
+
             <div class="project-card fade-in">
-                <h3>Proposal Automation Tool</h3>
-                <p>Built an AI-driven proposal assistant for summarization, response drafting, and risk analysis. Implemented a classification system for efficient proposal categorization. Integrated past response documents and chatbot assistance for automated responses.</p>
+                <h3>Multi-Stage Document Classification</h3>
+                <p class="duration">Ongoing | Python, YAKE, RAKE, TF-IDF, LDA, NMF, Random Forest</p>
+                <p>Developing a comprehensive classification system handling 52 document types and 176 sub-types using keyword extraction (YAKE, RAKE, TF-IDF, LDA, NMF), and machine learning classification. Building a GenAI-powered fallback mechanism for low-confidence predictions to reduce manual classification effort by 55%.</p>
             </div>
-            
+
+            <div class="project-card fade-in">
+                <h3>Proposal Automation Assistant</h3>
+                <p class="duration">8 months | Python, LangChain, Weaviate, FastAPI, Azure AI Services</p>
+                <p>Developed an AI assistant that automates proposal summarization, response drafting, and risk analysis with 94% classification accuracy. Integrated historical response documents and chatbot assistance, saving $150K annually and accelerating turnaround by 40%.</p>
+            </div>
+
+            <div class="project-card fade-in">
+                <h3>Document Analyzer with Quality Indexing</h3>
+                <p class="duration">2 months | Python, LangChain, Weaviate, FastAPI, Azure AI Services</p>
+                <p>Created an AI tool that generates intelligent summaries, FAQs, and contextual responses with built-in document quality scoring. Reduced document review time by 70% and manual validation efforts by 45% through automated content relevance evaluation.</p>
+            </div>
+
             <div class="project-card fade-in">
                 <h3>Advanced AI Research Enhancements</h3>
-                <p>Developed defence mechanisms against prompt hacking for security. Implemented data fingerprinting to prevent reuploading of duplicate chunks in the vector database. Built a Graph-based RAG model for structured document search and knowledge retrieval.</p>
+                <p class="duration">4 months | Python, Neo4j, Prompt Defensive Measures</p>
+                <p>Developed defense mechanisms against prompt injection and implemented data fingerprinting, optimizing storage costs by 35%. Built Graph-based RAG models and hierarchical indexing, improving search relevance by 45% and reducing security vulnerabilities by 80%.</p>
             </div>
-            
+
             <div class="project-card fade-in">
                 <h3>Agentic Chatbot Development</h3>
-                <p>Built an Agentic RAG chatbot and a SQL Agent chatbot using LangGraph and CrewAI, enabling dynamic multi-agent collaboration and intelligent task handling.</p>
+                <p class="duration">2 months | Python, LangGraph, CrewAI, MySQL</p>
+                <p>Built Agentic RAG and SQL Agent chatbots enabling dynamic multi-agent collaboration and intelligent task handling. Reduced human intervention by 40% and improved response accuracy by 35%, deployed across multiple internal applications.</p>
             </div>
-            
+
             <div class="project-card fade-in">
                 <h3>Evaluation-as-a-Service Platform</h3>
-                <p>Built a flexible evaluation tool to check the quality of LLM responses using DeepEval and RAGAS, even when no ground truth is available. The platform offers flexible API access and plugin support for various LLM providers.</p>
+                <p class="duration">1 month | Python, RAGAS, DeepEval, FastAPI</p>
+                <p>Built a flexible evaluation platform that assesses LLM response quality without ground truth using multiple evaluation metrics. Reduced evaluation time by 75% and increased model quality scores by 28%.</p>
             </div>
         </div>
     </section>
@@ -564,51 +598,55 @@
         <h2 class="section-title fade-in">Skills</h2>
         <div class="skills-grid">
             <div class="card skill-category fade-in">
-                <h3>Technical Skills</h3>
+                <h3>Technical</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">Java</span>
                     <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">GenAI</span>
-                    <span class="skill-tag">Prompt Engineering</span>
-                    <span class="skill-tag">Langchain</span>
-                    <span class="skill-tag">HuggingFace</span>
-                    <span class="skill-tag">Evaluation Frameworks</span>
                 </div>
             </div>
-            
+
             <div class="card skill-category fade-in">
-                <h3>Databases</h3>
+                <h3>AI/ML Frameworks</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">HuggingFace</span>
+                    <span class="skill-tag">LangGraph</span>
+                    <span class="skill-tag">CrewAI</span>
+                    <span class="skill-tag">Agno</span>
+                    <span class="skill-tag">SmolAgents</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                </div>
+            </div>
+
+            <div class="card skill-category fade-in">
+                <h3>Vector/Graph Databases</h3>
+                <div class="skill-tags">
                     <span class="skill-tag">Weaviate</span>
                     <span class="skill-tag">ChromaDB</span>
                     <span class="skill-tag">FAISS</span>
                     <span class="skill-tag">Neo4j</span>
                 </div>
             </div>
-            
+
             <div class="card skill-category fade-in">
-                <h3>Cloud & AI Platforms</h3>
+                <h3>Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="card skill-category fade-in">
+                <h3>Cloud Platforms</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">AWS Bedrock</span>
                     <span class="skill-tag">GCP Vertex AI</span>
-                    <span class="skill-tag">Azure AI Studio</span>
-                    <span class="skill-tag">Azure OpenAI</span>
+                    <span class="skill-tag">Azure AI Foundry</span>
+                    <span class="skill-tag">Azure OpenAI Services</span>
                 </div>
             </div>
-            
-            <div class="card skill-category fade-in">
-                <h3>Agentic Frameworks</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Agno</span>
-                    <span class="skill-tag">Langgraph</span>
-                    <span class="skill-tag">CrewAI</span>
-                    <span class="skill-tag">SmolAgents</span>
-                </div>
-            </div>
-            
+
             <div class="card skill-category fade-in">
                 <h3>Web Frameworks</h3>
                 <div class="skill-tags">
@@ -618,9 +656,9 @@
                     <span class="skill-tag">Gradio</span>
                 </div>
             </div>
-            
+
             <div class="card skill-category fade-in">
-                <h3>Tools</h3>
+                <h3>Tools & DevOps</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">GitHub</span>
@@ -628,72 +666,113 @@
                     <span class="skill-tag">Swagger</span>
                 </div>
             </div>
+
+            <div class="card skill-category fade-in">
+                <h3>Evaluation Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Deepeval</span>
+                    <span class="skill-tag">RAGAS</span>
+                </div>
+            </div>
+
+            <div class="card skill-category fade-in">
+                <h3>Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Decision Making</span>
+                    <span class="skill-tag">Adaptability</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                    <span class="skill-tag">Team Leadership</span>
+                    <span class="skill-tag">Fast Learning</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="awards">
         <h2 class="section-title fade-in">Awards & Achievements</h2>
-        
+
         <div class="card fade-in" style="margin-bottom: 2rem;">
             <h3>Awards & Recognitions</h3>
             <ul style="list-style: none; padding-left: 0;">
                 <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
                     <span style="position: absolute; left: 0; color: var(--accent-color);">🏆</span>
-                    <strong>Unit Rise Award</strong> - Acknowledged for outstanding performance and contributions as a new team member.
+                    <strong>Unit Rise Award</strong> - Acknowledged for outstanding performance and contributions as a
+                    new team member.
                 </li>
                 <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
                     <span style="position: absolute; left: 0; color: var(--accent-color);">⚡</span>
-                    <strong>Rise Insta Award</strong> - Recognized for delivering high-impact results on critical tasks within tight deadlines, demonstrating agility and initiative.
+                    <strong>Rise Insta Award</strong> - Recognized for delivering high-impact results on critical tasks
+                    within tight deadlines, demonstrating agility and initiative.
                 </li>
             </ul>
         </div>
-        
-        <h3 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">Hackathons & Competitions</h3>
+
+        <h2 class="section-title fade-in">Hackathons & Competitions</h2>
         <div class="awards-grid">
+             <div class="award-card card fade-in">
+                <h3>AWS Agentic Hackathon</h3>
+                <p class="position">🥈 2nd Place</p>
+                <p>Developed an end-to-end ETL automation pipeline using the Medallion Architecture with three autonomous agents. Created a Business Insights Agent for automated KPI dashboards and AI-driven insights.</p>
+            </div>
             <div class="award-card card fade-in">
                 <h3>Convergence Surround 2024</h3>
                 <p class="position">🥇 1st Place</p>
-                <p>Built a GenAI UI using Semantic Search and advanced RAG to help CSRs retrieve accurate, summarized healthcare info.</p>
+                <p>Built a GenAI UI using Semantic Search and advanced RAG to help CSRs retrieve accurate, summarized
+                    healthcare info.</p>
             </div>
-            
+
             <div class="award-card card fade-in">
                 <h3>Gemini Hackathon</h3>
                 <p class="position">🥉 3rd Place</p>
-                <p>Implemented data fingerprinting and advanced RAG (query expansion, reranking) with input guardrails for prompt security.</p>
+                <p>Implemented data fingerprinting and advanced RAG (query expansion, reranking) with input guardrails
+                    for prompt security.</p>
             </div>
-            
+
             <div class="award-card card fade-in">
                 <h3>Redefine Migration Hackathon</h3>
                 <p class="position">🌟 Special Mention</p>
                 <p>Developed AI agents to visualize legacy app landscapes using GenAI and graph visualization.</p>
             </div>
-            
+
             <div class="award-card card fade-in">
                 <h3>Infosys Topaz Hackathon</h3>
                 <p class="position">🥉 3rd Place</p>
                 <p>Created an AI agent to scan, classify, and link insights across diverse data sources.</p>
             </div>
+
+           
         </div>
     </section>
 
     <section id="contact">
         <h2 class="section-title fade-in">Get In Touch</h2>
-        <div class="contact-form fade-in">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="cta-button" style="width: 100%; text-align: center;">Send Message</button>
-            </form>
+        <div class="card fade-in" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <h3>Contact Details</h3>
+            <p>
+                <strong>Email:</strong> 
+                <a href="#" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=brsushameendrarao@gmail.com','_blank'); return false;" style="color: var(--accent-color);">brsushameendrarao@gmail.com</a>
+                <span class="copy-icon" data-copy="brsushameendrarao@gmail.com" title="Copy Email" style="cursor:pointer; margin-left:8px; vertical-align:middle;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><rect x="3" y="3" width="13" height="13" rx="2" ry="2"></rect></svg>
+                </span>
+            </p>
+            <p>
+                <strong>Phone:</strong> 
+                <a href="tel:+916301305791" style="color: var(--accent-color);">+91-6301305791</a>
+                <span class="copy-icon" data-copy="+91-6301305791" title="Copy Phone" style="cursor:pointer; margin-left:8px; vertical-align:middle;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68A2 2 0 0 1 22 16.92z"></path></svg>
+                </span>
+            </p>
+            <p>
+                <strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/b-r-sushameendra-rao-3a2137214" target="_blank" style="color: var(--accent-color);">b-r-sushameendra-rao-3a2137214</a>
+                <span class="copy-icon" data-copy="https://www.linkedin.com/in/b-r-sushameendra-rao-3a2137214" title="Copy LinkedIn" style="cursor:pointer; margin-left:8px; vertical-align:middle;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><line x1="16" y1="11" x2="16" y2="16"></line><line x1="12" y1="11" x2="12" y2="16"></line><line x1="8" y1="11" x2="8" y2="16"></line></svg>
+                </span>
+            </p>
+            <p style="color: var(--text-muted); margin-top: 1rem;">Feel free to reach out via email, phone, or LinkedIn for any opportunities.</p>
+            <span id="copy-tooltip" style="display:none; position:fixed; background:var(--card-bg); color:var(--accent-color); padding:6px 12px; border-radius:6px; font-size:0.95rem; z-index:9999;">Copied!</span>
+        </div>
         </div>
     </section>
 
@@ -741,18 +820,28 @@
             }
         });
 
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
+
+        // Copy to clipboard logic for contact icons
+        document.querySelectorAll('.copy-icon').forEach(icon => {
+            icon.addEventListener('click', function(e) {
+                const value = this.getAttribute('data-copy');
+                navigator.clipboard.writeText(value);
+                // Show tooltip
+                const tooltip = document.getElementById('copy-tooltip');
+                tooltip.textContent = 'Copied!';
+                tooltip.style.display = 'block';
+                // Position tooltip near mouse
+                tooltip.style.left = (e.pageX + 10) + 'px';
+                tooltip.style.top = (e.pageY - 10) + 'px';
+                setTimeout(() => { tooltip.style.display = 'none'; }, 1200);
+            });
         });
 
         // Add typing animation to hero subtitle
         const subtitle = document.querySelector('.hero .subtitle');
         const text = subtitle.textContent;
         subtitle.textContent = '';
-        
+
         setTimeout(() => {
             let i = 0;
             const typeWriter = () => {
@@ -766,4 +855,5 @@
         }, 1500);
     </script>
 </body>
+
 </html>
